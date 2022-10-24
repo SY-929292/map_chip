@@ -29,7 +29,7 @@ private:
 
 	// マップデータの入出力
 	void outputData();	// マップのデータを出力する
-	void inputData();	// マップのデータを読み込む
+	void readData();	// ファイルの読み込み
 
 private:
 	// グラフィックデータハンドル
