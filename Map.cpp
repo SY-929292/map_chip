@@ -81,7 +81,7 @@ void Map::update()
 		outputData();
 	//	readData();
 	}
-#if 0
+#if true
 	if (Pad::isTrigger(PAD_INPUT_UP))
 	{
 		if (indexY > 0)
@@ -124,7 +124,7 @@ void Map::update()
 		m_scrollY -= 8;
 		if (m_scrollY < -Game::kScreenHeight)
 		{
-			m_scrollY -= Game::kScreenHeight;
+			m_scrollY += Game::kScreenHeight;
 		}
 	}
 	if (Pad::isPress(PAD_INPUT_LEFT))
@@ -140,7 +140,7 @@ void Map::update()
 		m_scrollX -= 8;
 		if (m_scrollX < -Game::kScreenWidth)
 		{
-			m_scrollX -= Game::kScreenWidth;
+			m_scrollX += Game::kScreenWidth;
 		}
 	}
 #endif
