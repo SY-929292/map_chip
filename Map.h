@@ -19,6 +19,8 @@ public:
 	void draw();
 
 private:
+
+	void drawMap(int offsetX, int offsetY);
 	// マップチップ編集用カーソルの表示
 	void drawCursor();
 
